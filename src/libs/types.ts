@@ -41,8 +41,8 @@ export interface Database {
   users: User[];
 }
 
-export interface EnrollmentPrisma {
-  studentId: string;
-  courseNo: string;
-  course: Course;
-}
+// export interface EnrollmentPrisma {
+//   studentId: string;
+//   courseNo: string;
+//   course: Course;
+// }
