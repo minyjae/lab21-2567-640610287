@@ -132,7 +132,7 @@ export const DELETE = async (request: NextRequest) => {
       { status: 401 }
     );
   }
-  const { role, studentId } = <Payload>payload;
+  const { role } = <Payload>payload;
 
   if (role === "ADMIN") {
     return NextResponse.json(
@@ -157,7 +157,7 @@ export const DELETE = async (request: NextRequest) => {
     );
   }
 
-  const prisma = getPrisma();
+  // const prisma = getPrisma();
   // Perform data delete
 
   return NextResponse.json({
