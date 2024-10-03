@@ -38,7 +38,6 @@ export default function RootLayout({
         // });
         $authenStore.set({ token, authenUsername });
       } catch (err) {
-        console.log(err.message);
         isTokenValid = false;
       }
     }
