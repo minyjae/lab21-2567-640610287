@@ -1,7 +1,7 @@
 "use client";
 
 import { $authenStore } from "@lib/authenStore";
-import { Course } from "@lib/types";
+import { Course, EnrollmentPrisma } from "@lib/types";
 
 import {
   Button,
@@ -117,7 +117,7 @@ export default function StudentPage() {
         <Title order={4}>My Course(s)</Title>
 
         {myEnrollments &&
-          myEnrollments.map((enroll: any) => (
+          myEnrollments.map((enroll: EnrollmentPrisma) => (
             <Group my="xs" key={enroll.courseNo}>
               <Text>
                 {enroll.courseNo} - {enroll.course.title}

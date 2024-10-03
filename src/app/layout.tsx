@@ -5,7 +5,6 @@ import { Container, Group, Loader, Title } from "@mantine/core";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState, useTransition } from "react";
 import Footer from "@components/Footer";
-import axios from "axios";
 
 import { Inter } from "next/font/google";
 import { MantineProvider } from "@mantine/core";
